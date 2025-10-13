@@ -30,30 +30,49 @@ import "fmt"
 func main() {
 	// Exercise 1: Basic if statements
 	// TODO: Write an if statement that checks if a number is positive, negative, or zero
-	
-	// Exercise 2: If with initialization
+	var i int = 10
+	if i > 0 {
+		fmt.Printf("%d is positive!\n", i)
+	} else if i < 0 {
+		fmt.Printf("%d is negative!\n", i)
+	} else {
+		fmt.Printf("%d is zero!\n", i)
+	} // Exercise 2: If with initialization
 	// TODO: Use the pattern "if x := someValue; condition" to check if a number is even
-	
+	if x := 11; x%2 == 0 {
+		fmt.Println("x is even!")
+	} else {
+		fmt.Println("x is odd!")
+	}
+
 	// Exercise 3: Nested if statements
 	// TODO: Check age ranges: child (< 13), teenager (13-19), adult (20-64), senior (65+)
-	
+	if x := 29; x <= 13 {
+		fmt.Println("x is a child")
+	} else if x > 13 && x <= 19 {
+		fmt.Println("x is a teenager")
+	} else if x > 19 && x <= 64 {
+		fmt.Println("x is an adult")
+	} else if x > 64 {
+		fmt.Println("x is a senior")
+	}
 	// Exercise 4: Basic switch statement
 	// TODO: Create a switch statement that prints the day of the week based on a number (1-7)
-	
-	// Exercise 5: Switch with multiple cases
-	// TODO: Create a switch for grades: A,B (Excellent), C,D (Good), F (Fail)
-	
-	// Exercise 6: Switch with expressions
-	// TODO: Use switch to categorize numbers: negative, zero, small positive (1-10), large positive (>10)
-	
-	// Exercise 7: Switch without expression (replaces if-else chain)
-	// TODO: Use switch true with conditions to check temperature ranges:
-	//       - Freezing (< 0°C)
-	//       - Cold (0-15°C)
-	//       - Mild (16-25°C)
-	//       - Hot (> 25°C)
-	
-	// Exercise 8: Logical operators in conditions
-	// TODO: Check if a year is a leap year using if statement
-	//       (divisible by 4 AND (not divisible by 100 OR divisible by 400))
+	var day int = 4
+	switch day {
+	case 1:
+		fmt.Println("Today is monday!")
+	case 2:
+		fmt.Println("Today is tuesday!")
+	case 3:
+		fmt.Println("Today is wednesday!")
+	case 4:
+		fmt.Println("Today is thursday!")
+	case 5:
+		fmt.Println("Today is friday!")
+	case 6:
+		fmt.Println("Today is saturday!")
+	case 7:
+		fmt.Println("Today is sunday!")
+	}
 }
