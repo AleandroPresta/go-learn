@@ -41,26 +41,35 @@ import "fmt"
 // TODO: Write a function that takes variable number of integers and returns their sum
 
 func main() {
+	// Move small helper functions into main as anonymous functions so
+	// everything executable is inside main (per request).
+
+	// Define sum as an anonymous function and use it immediately so it is
+	// contained within main and doesn't create unused top-level symbols.
+	sum := func(a, b int) int {
+		return a + b
+	}
+
+	// Use the sum function to avoid unused variable compile errors and
+	// to demonstrate how to keep functions scoped inside main.
+	fmt.Println("sum(2, 3) =", sum(2, 3))
+
 	// Exercise 6: Function calls
 	// TODO: Call all the functions you created above and print their results
-	
+
 	// Exercise 7: Anonymous functions
 	// TODO: Create an anonymous function that squares a number and assign it to a variable
 	// TODO: Call the anonymous function
-	
+
 	// Exercise 8: Function as parameter
 	// TODO: Write a function that takes another function as parameter
 	// TODO: Create different operation functions (add, multiply) and pass them as arguments
-	
+
 	// Exercise 9: Closures
 	// TODO: Create a function that returns a function (closure)
 	// TODO: The returned function should have access to variables from the outer function
-	
+
 	// Exercise 10: Recursive function
 	// TODO: Write a recursive function to calculate factorial
 	// TODO: Write a recursive function to calculate Fibonacci numbers
 }
-
-// Helper functions area - implement your functions here:
-
-// TODO: Implement all the functions for the exercises above
