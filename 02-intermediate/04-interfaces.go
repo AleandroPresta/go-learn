@@ -48,31 +48,32 @@ import "fmt"
 // TODO: Create interfaces that embed other interfaces
 
 func main() {
+	fmt.Println("============================================================")
 	// Exercise 9: Interface usage
 	// TODO: Create instances of different shapes and use them through interface
-	
+
 	// Exercise 10: Interface slices
 	// TODO: Create a slice of Shape interfaces with different concrete types
 	// TODO: Iterate and call methods on each
-	
+
 	// Exercise 11: Nil interfaces and interface values
 	// TODO: Understand nil interfaces vs interfaces with nil concrete values
 	// TODO: Demonstrate the difference
-	
+
 	// Exercise 12: Interface assertion patterns
 	// TODO: Implement safe type assertion with the comma ok idiom
 	// TODO: Handle cases where assertion fails
-	
+
 	// Exercise 13: Practical example - Plugin system
 	// TODO: Design a simple plugin system using interfaces:
 	//       - Plugin interface with Name() and Execute() methods
 	//       - Multiple plugin implementations
 	//       - Plugin manager that runs all plugins
-	
+
 	// Exercise 14: Standard library interfaces
 	// TODO: Implement fmt.Stringer interface for your custom types
 	// TODO: Understand how this integrates with fmt package
-	
+
 	// Exercise 15: Interface best practices
 	// TODO: Create small, focused interfaces
 	// TODO: Demonstrate accepting interfaces and returning concrete types

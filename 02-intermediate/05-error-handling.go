@@ -23,7 +23,6 @@ and propagate errors clearly.
 package main
 
 import (
-	"errors"
 	"fmt"
 )
 
@@ -45,42 +44,43 @@ import (
 // TODO: Show different ways to handle errors in various scenarios
 
 func main() {
+	fmt.Println("============================================================")
 	// Exercise 6: Error checking patterns
 	// TODO: Demonstrate the standard error checking pattern
 	// TODO: Show early returns for error handling
-	
+
 	// Exercise 7: Error aggregation
 	// TODO: Create a function that can return multiple errors
 	// TODO: Collect and report all errors instead of failing on the first
-	
+
 	// Exercise 8: Panic and recover
 	// TODO: Demonstrate panic() and recover() (use sparingly)
 	// TODO: Show when panic is appropriate vs returning errors
-	
+
 	// Exercise 9: Error context
 	// TODO: Build error messages that provide useful debugging information
 	// TODO: Include relevant values and operation context
-	
+
 	// Exercise 10: File operations with error handling
 	// TODO: Read a file and handle various error conditions
 	// TODO: Proper resource cleanup even when errors occur
-	
+
 	// Exercise 11: Validation with detailed errors
 	// TODO: Create a struct validator that returns detailed error information
 	// TODO: Handle multiple validation failures
-	
+
 	// Exercise 12: Error handling in HTTP-like scenarios
 	// TODO: Simulate HTTP status codes with custom error types
 	// TODO: Handle different error types differently
-	
+
 	// Exercise 13: Error logging and debugging
 	// TODO: Create functions that log errors with different severity levels
 	// TODO: Include stack trace information where helpful
-	
+
 	// Exercise 14: Retry mechanism with errors
 	// TODO: Implement a retry function that attempts operations multiple times
 	// TODO: Handle transient vs permanent errors differently
-	
+
 	// Exercise 15: Error handling best practices
 	// TODO: Demonstrate guard clauses and early returns
 	// TODO: Show proper error message formatting

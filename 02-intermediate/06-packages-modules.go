@@ -33,68 +33,89 @@ import "fmt"
 // package-related concepts
 
 func main() {
+	fmt.Println("============================================================")
 	// Exercise 1: Understanding package structure
 	// TODO: Research and document the structure of a Go package
 	// TODO: Explain what makes a package vs a module
-	
+
 	fmt.Println("=== EXERCISE 1: Package Structure ===")
+
+	fmt.Println("============================================================")
 	// Write comments explaining:
 	// - What is a package?
 	// - What files belong to the same package?
 	// - How does the main package differ from other packages?
-	
+
 	// Exercise 2: Import paths and naming
 	// TODO: Demonstrate different import styles
 	fmt.Println("\n=== EXERCISE 2: Import Styles ===")
+
+	fmt.Println("============================================================")
 	// Show examples of:
 	// - Standard imports
 	// - Aliased imports
 	// - Dot imports (and why they're discouraged)
 	// - Blank imports
-	
+
 	// Exercise 3: Exported vs Unexported identifiers
 	// TODO: Create examples showing visibility rules
 	fmt.Println("\n=== EXERCISE 3: Visibility Rules ===")
+
+	fmt.Println("============================================================")
 	// Demonstrate:
-	exportedFunction()    // This would be accessible from other packages
-	unexportedFunction()  // This would NOT be accessible from other packages
-	
+	exportedFunction()   // This would be accessible from other packages
+	unexportedFunction() // This would NOT be accessible from other packages
+
 	// Exercise 4: Package documentation
 	// TODO: Show how to document packages and exported functions
 	fmt.Println("\n=== EXERCISE 4: Documentation ===")
+
+	fmt.Println("============================================================")
 	// Write examples of:
 	// - Package-level documentation
 	// - Function documentation
 	// - Type documentation
-	
+
 	// Exercise 5: Standard library exploration
 	// TODO: Explore and use various standard library packages
 	fmt.Println("\n=== EXERCISE 5: Standard Library ===")
+
+	fmt.Println("============================================================")
 	exploreStandardLibrary()
-	
+
 	// Exercise 6: Module concepts (theoretical)
 	// TODO: Explain go.mod file and dependency management
 	fmt.Println("\n=== EXERCISE 6: Modules ===")
+
+	fmt.Println("============================================================")
 	explainModules()
-	
+
 	// Exercise 7: Package initialization
 	// TODO: Understand init() functions and package initialization order
 	fmt.Println("\n=== EXERCISE 7: Package Initialization ===")
+
+	fmt.Println("============================================================")
 	explainInitialization()
-	
+
 	// Exercise 8: Creating a simple library structure
 	// TODO: Design a package structure for a math library
 	fmt.Println("\n=== EXERCISE 8: Library Design ===")
+
+	fmt.Println("============================================================")
 	designMathLibrary()
-	
+
 	// Exercise 9: Dependency management concepts
 	// TODO: Understand semantic versioning and go.mod
 	fmt.Println("\n=== EXERCISE 9: Dependencies ===")
+
+	fmt.Println("============================================================")
 	explainDependencyManagement()
-	
+
 	// Exercise 10: Best practices
 	// TODO: List best practices for package design
 	fmt.Println("\n=== EXERCISE 10: Best Practices ===")
+
+	fmt.Println("============================================================")
 	packageBestPractices()
 }
 
@@ -126,7 +147,7 @@ func exploreStandardLibrary() {
 func explainModules() {
 	fmt.Println("TODO: Explain go.mod structure and commands:")
 	fmt.Println("- go mod init")
-	fmt.Println("- go mod tidy") 
+	fmt.Println("- go mod tidy")
 	fmt.Println("- go mod download")
 	fmt.Println("- Semantic versioning")
 }
@@ -141,7 +162,7 @@ func explainInitialization() {
 func designMathLibrary() {
 	fmt.Println("TODO: Design package structure for:")
 	fmt.Println("- Basic arithmetic operations")
-	fmt.Println("- Geometric calculations") 
+	fmt.Println("- Geometric calculations")
 	fmt.Println("- Statistical functions")
 	fmt.Println("- Proper exported/unexported split")
 }

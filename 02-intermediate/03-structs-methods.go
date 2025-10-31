@@ -46,32 +46,33 @@ import "fmt"
 // TODO: Define a struct with embedded fields (composition)
 
 func main() {
+	fmt.Println("============================================================")
 	// Exercise 6: Struct initialization
 	// TODO: Create Person instances using different initialization methods:
 	//       - Zero value
 	//       - Positional initialization
 	//       - Named field initialization
-	
+
 	// Exercise 7: Struct operations
 	// TODO: Access and modify struct fields
 	// TODO: Copy structs and observe value semantics
-	
+
 	// Exercise 8: Method calls
 	// TODO: Create Rectangle instances and call all methods
 	// TODO: Create Counter instances and test increment/decrement
-	
+
 	// Exercise 9: Pointer vs value receivers
 	// TODO: Demonstrate the difference between pointer and value receivers
 	// TODO: Show when modifications persist and when they don't
-	
+
 	// Exercise 10: Struct comparison
 	// TODO: Compare structs for equality
 	// TODO: Understand when structs are comparable
-	
+
 	// Exercise 11: JSON-like operations (manual)
 	// TODO: Create a function that converts a Person struct to a string representation
 	// TODO: Create a function that creates a Person from string data
-	
+
 	// Exercise 12: Practical example
 	// TODO: Design a simple bank account system with:
 	//       - Account struct (AccountNumber, Balance, Owner)

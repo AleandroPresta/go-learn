@@ -19,7 +19,10 @@ Practice tip: build a word frequency counter from a slice of strings using a map
 
 package main
 
+import "fmt"
+
 func main() {
+	fmt.Println("============================================================")
 	// Exercise 1: Map creation and basic operations
 	// TODO: Create a map with string keys and int values using make()
 	// m := map[string]int{"a": 1, "b": 2}
@@ -42,24 +45,69 @@ func main() {
 	// fmt.Println(DefaultGet(m, "v", -1))
 	// Exercise 5: Map iteration
 	// TODO: Iterate over a map using range
+	m := map[string]int{
+		"Aleandro": 29,
+		"Mario":    17,
+	}
+	for key, value := range m {
+		fmt.Printf("key: %s, value: %d\n", key, value)
+	}
 
-	// TODO: Print keys only, values only, and key-value pairs
-	// TODO: Note that iteration order is not guaranteed
+	fmt.Println("============================================================")
 
 	// Exercise 6: Map deletion
 	// TODO: Delete keys from a map using delete()
 	// TODO: Try to delete a non-existent key (observe no error)
+	delete(m, "Mario")
+	for key, value := range m {
+		fmt.Printf("key: %s, value: %d\n", key, value)
+	}
+
+	fmt.Println("============================================================")
+	delete(m, "Franco")
 
 	// Exercise 7: Nested maps
 	// TODO: Create a map of maps (e.g., map[string]map[string]int)
-	// TODO: Represent a simple database structure
+	m2 := map[string]map[string]int{
+		"Aleandro": {
+			"Age":    29,
+			"Status": 1,
+		},
+		"Filippo": {
+			"Age":    19,
+			"Status": 1,
+		},
+	}
+	for key1, value1 := range m2 {
+		fmt.Printf(key1)
+		for key2, value2 := range value1 {
+			fmt.Println(key2)
+			fmt.Println(value2)
+		}
+	}
+	fmt.Println("============================================================")
 
 	// Exercise 8: Map as function parameters
 	// TODO: Write functions that take maps as parameters
+	fmt.Println("Map before function: ")
+	for key, value := range m {
+		fmt.Printf("key: %s, value: %d\n", key, value)
+	}
+	fmt.Println("Map after function: ")
+	for key, value := range m {
+		fmt.Printf("key: %s, value: %d\n", key, value)
+	}
 	// TODO: Understand that maps are passed by reference
+	m3 := mapFunction2(m)
+	fmt.Println("Map after function that creates a new map: ")
+	for key, value := range m3 {
+		fmt.Printf("key: %s, value: %d\n", key, value)
+	}
+	fmt.Println("============================================================")
 
 	// Exercise 9: Practical exercises
 	// TODO: Create a word counter that counts occurrences of words in a slice
+
 	// TODO: Create a phone book (name -> phone number)
 	// TODO: Implement a simple cache with get/set operations
 
@@ -75,4 +123,23 @@ func DefaultGet(m map[string]int, index string, defaultValue int) int {
 	} else {
 		return m[index]
 	}
+}
+
+func thatTakesAMap(asArgument map[string]int) {
+	for _, value := range asArgument {
+		value++
+	}
+}
+
+func mapFunction2(m map[string]int) map[string]int {
+	result := map[string]int{}
+	for key, value := range m {
+		result[key] = value + 1
+	}
+	return result
+}
+
+func workCounter(a []int) {
+	m := map[string]int
+	for 
 }

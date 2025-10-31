@@ -27,70 +27,81 @@ package main
 
 import (
 	"fmt"
-	"time"
 )
 
 func main() {
 	// Exercise 1: Basic channel creation and communication
 	// TODO: Create an unbuffered channel and send/receive data
+	fmt.Println("============================================================")
 	fmt.Println("=== EXERCISE 1: Basic Channels ===")
 	basicChannelExample()
-	
+
 	// Exercise 2: Buffered channels
 	// TODO: Create buffered channels with different sizes
 	// TODO: Understand blocking behavior
+	fmt.Println("============================================================")
 	fmt.Println("\n=== EXERCISE 2: Buffered Channels ===")
 	bufferedChannelExample()
-	
+
 	// Exercise 3: Channel directions
 	// TODO: Create functions with send-only and receive-only channels
+	fmt.Println("============================================================")
 	fmt.Println("\n=== EXERCISE 3: Channel Directions ===")
 	channelDirectionsExample()
-	
+
 	// Exercise 4: Closing channels and range
 	// TODO: Close channels and iterate using range
 	// TODO: Check if channel is closed using the comma ok idiom
+	fmt.Println("============================================================")
 	fmt.Println("\n=== EXERCISE 4: Closing Channels ===")
 	closingChannelsExample()
-	
+
 	// Exercise 5: Select statement
 	// TODO: Use select for non-blocking channel operations
 	// TODO: Handle multiple channels simultaneously
+	fmt.Println("============================================================")
 	fmt.Println("\n=== EXERCISE 5: Select Statement ===")
 	selectExample()
-	
+
 	// Exercise 6: Timeout with select
 	// TODO: Implement timeouts using select and time.After
+	fmt.Println("============================================================")
 	fmt.Println("\n=== EXERCISE 6: Timeouts ===")
 	timeoutExample()
-	
+
 	// Exercise 7: Pipeline pattern
 	// TODO: Create a pipeline of goroutines connected by channels
+	fmt.Println("============================================================")
 	fmt.Println("\n=== EXERCISE 7: Pipeline ===")
 	pipelineExample()
-	
+
 	// Exercise 8: Fan-out/Fan-in pattern
 	// TODO: Distribute work to multiple workers and collect results
+	fmt.Println("============================================================")
 	fmt.Println("\n=== EXERCISE 8: Fan-out/Fan-in ===")
 	fanOutFanInExample()
-	
+
 	// Exercise 9: Worker pool with channels
 	// TODO: Implement a worker pool using channels for job distribution
+	fmt.Println("============================================================")
 	fmt.Println("\n=== EXERCISE 9: Worker Pool ===")
 	workerPoolChannelExample()
-	
+
 	// Exercise 10: Rate limiting with channels
 	// TODO: Implement rate limiting using channels and time.Tick
+	fmt.Println("============================================================")
 	fmt.Println("\n=== EXERCISE 10: Rate Limiting ===")
 	rateLimitingExample()
-	
+
 	// Exercise 11: Channel synchronization patterns
 	// TODO: Use channels for synchronization (done channels)
+	fmt.Println("============================================================")
 	fmt.Println("\n=== EXERCISE 11: Synchronization ===")
 	synchronizationExample()
-	
+
 	// Exercise 12: Nil channels and their behavior
 	// TODO: Understand nil channel behavior in select statements
+	fmt.Println("============================================================")
 	fmt.Println("\n=== EXERCISE 12: Nil Channels ===")
 	nilChannelExample()
 }
