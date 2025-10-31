@@ -107,9 +107,9 @@ func main() {
 
 	// Exercise 9: Practical exercises
 	// TODO: Create a word counter that counts occurrences of words in a slice
-
-	// TODO: Create a phone book (name -> phone number)
-	// TODO: Implement a simple cache with get/set operations
+	words := [4]string{"Go", "Programming", "Go", "Prokofiev"}
+	counter := workCounter(words[:])
+	printMap(counter)
 
 	// Exercise 10: Advanced map operations
 	// TODO: Create a function that merges two maps
@@ -139,7 +139,16 @@ func mapFunction2(m map[string]int) map[string]int {
 	return result
 }
 
-func workCounter(a []int) {
-	m := map[string]int
-	for 
+func workCounter(a []string) map[string]int {
+	m := map[string]int{}
+	for i := 0; i < len(a); i++ {
+		m[a[i]] = m[a[i]] + 1
+	}
+	return m
+}
+
+func printMap(m map[string]int) {
+	for key, value := range m {
+		fmt.Printf("key: %s, value: %d\n", key, value)
+	}
 }
