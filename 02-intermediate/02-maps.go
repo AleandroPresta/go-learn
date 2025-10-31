@@ -110,11 +110,12 @@ func main() {
 	words := [4]string{"Go", "Programming", "Go", "Prokofiev"}
 	counter := workCounter(words[:])
 	printMap(counter)
+	fmt.Println("============================================================")
 
 	// Exercise 10: Advanced map operations
 	// TODO: Create a function that merges two maps
-	// TODO: Create a function that inverts a map (values become keys)
-	// TODO: Create a function that filters map entries based on a condition
+	printMap(mergeMaps(counter, m3))
+	fmt.Println("============================================================")
 }
 
 func DefaultGet(m map[string]int, index string, defaultValue int) int {
@@ -151,4 +152,18 @@ func printMap(m map[string]int) {
 	for key, value := range m {
 		fmt.Printf("key: %s, value: %d\n", key, value)
 	}
+}
+
+func mergeMaps(m1 map[string]int, m2 map[string]int) map[string]int {
+	result := map[string]int{}
+
+	for key, value := range m1 {
+		result[key] = value
+	}
+
+	for key, value := range m2 {
+		result[key] = value
+	}
+
+	return result
 }
